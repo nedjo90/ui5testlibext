@@ -20,6 +20,6 @@ builder:
         app:
           name: ZLIBEXT
           package: $TMP
-          transport: LOCAL
+          transport:
         exclude:
           - /test/
