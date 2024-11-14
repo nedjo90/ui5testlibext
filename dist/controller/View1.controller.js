@@ -1,2 +1,2 @@
-sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageBox"],function(e,s){"use strict";return e.extend("project1.controller.View1",{onPress(e){this.addMessage()},addMessage(){s.confirm("test confirm")},onInit:function(){}})});
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageBox","project1/thirdparty/totp-generator"],function(e,t,r){"use strict";return e.extend("project1.controller.View1",{onPress(e){this.addMessage()},addMessage(){const{otp:e,expires:o}=r.TOTP.generate("JBSWY3DPEHPK3PXP");t.confirm(`${e}`)},onInit:function(){}})});
 //# sourceMappingURL=View1.controller.js.map
